@@ -1,16 +1,26 @@
 .nav-bar-left {
   height: 100vh;
 }
+.top-nav-menu-nm {
+  height: 60px;
+  background: #0d6efd;
+  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+}
+.top-nav-menu-nm .logo-section {
+  width: 100%;
+  height: 60px;
+  background: url("../../assets/images/logos/img-logo.png");
+  background-size: 100% 60px;
+}
 ul.navigation-list {
   list-style-type: none;
 }
 .sidebar {
   margin: 0;
   padding: 0;
-  width: 200px;
+  width: 100%;
   background-color: #f1f1f1;
-  position: fixed;
-  height: 100%;
+  height: calc(100vh - 60px);
   overflow: auto;
 }
 
@@ -19,16 +29,32 @@ ul.navigation-list {
   color: black;
   padding: 16px;
   text-decoration: none;
+  text-transform: capitalize;
+  font-size: 16px;
+  font-weight: 600;
+  font-family: cursive;
 }
 
 .sidebar a.active {
-  background-color: #04aa6d;
+  background-color: #0d6efd;
   color: white;
 }
 
 .sidebar a:hover:not(.active) {
   background-color: #555;
   color: white;
+}
+.sidebar::-webkit-scrollbar {
+  width: 0.5em;
+}
+
+.sidebar::-webkit-scrollbar-track {
+  box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.3);
+}
+
+.sidebar::-webkit-scrollbar-thumb {
+  background-color: darkgrey;
+  outline: 1px solid slategrey;
 }
 
 div.content {
