@@ -1,53 +1,46 @@
-
 <div class="container">
   <div class="mt-2 mb-2">
     <ul class="nav nav-pills nav-fill">
-      <li class="nav-item">
-        <a class="nav-link active">
+      <li class="nav-item" (click)="chooseTab('inplay')">
+        <a class="nav-link" [ngClass]="{'active': selectedTab === 'inplay'}">
           <img src="./assets/images/infinity.png" height="28" alt="">
           In Play</a>
       </li>
-      <li class="nav-item">
-        <a class="nav-link" >
+      <li class="nav-item" (click)="chooseTab('cricket')">
+        <a class="nav-link" [ngClass]="{'active': selectedTab === 'cricket'}">
           <img src="./assets/images/cricket.png" height="28" alt="">
-         Cricket</a>
+          Cricket</a>
       </li>
-      <li class="nav-item">
-        <a class="nav-link" >
+      <li class="nav-item" (click)="chooseTab('tennis')">
+        <a class="nav-link" [ngClass]="{'active': selectedTab === 'tennis'}">
           <img src="./assets/images/tennis-ball.png" height="28" alt="">
-         Tennis</a>
+          Tennis</a>
       </li>
-      <li class="nav-item">
-        <a class="nav-link" >
+      <li class="nav-item" (click)="chooseTab('football')">
+        <a class="nav-link" [ngClass]="{'active': selectedTab ==='football'}">
           <img src="./assets/images/football.png" height="28" alt="">
-         Football</a>
+          Football</a>
       </li>
     </ul>
   </div>
   <div class="prefix">
-    <ngx-datatable
-    class="bootstrap"
-    [columnMode]="ColumnMode.flex"
-    [headerHeight]="50"
-    [footerHeight]="0"
-    rowHeight="auto"
-    [rows]="rows"
-  >
-    <ngx-datatable-column name="Name" [flexGrow]="3">
-      <ng-template let-value="value" ngx-datatable-cell-template>
-        {{ value }}
-      </ng-template>
-    </ngx-datatable-column>
-    <ngx-datatable-column name="Gender" [flexGrow]="1">
-      <ng-template let-row="row" let-value="value" ngx-datatable-cell-template>
-        {{ value }}
-      </ng-template>
-    </ngx-datatable-column>
-    <ngx-datatable-column name="Age" [flexGrow]="1">
-      <ng-template let-value="value" ngx-datatable-cell-template>
-        {{ value }}
-      </ng-template>
-    </ngx-datatable-column>
-  </ngx-datatable>
+    <ngx-datatable class="bootstrap" [columnMode]="ColumnMode.flex" [headerHeight]="50" [footerHeight]="0"
+      rowHeight="auto" [rows]="rows">
+      <ngx-datatable-column name="Name" [flexGrow]="3">
+        <ng-template let-value="value" ngx-datatable-cell-template>
+          {{ value }}
+        </ng-template>
+      </ngx-datatable-column>
+      <ngx-datatable-column name="Gender" [flexGrow]="1">
+        <ng-template let-row="row" let-value="value" ngx-datatable-cell-template>
+          {{ value }}
+        </ng-template>
+      </ngx-datatable-column>
+      <ngx-datatable-column name="Age" [flexGrow]="1">
+        <ng-template let-value="value" ngx-datatable-cell-template>
+          {{ value }}
+        </ng-template>
+      </ngx-datatable-column>
+    </ngx-datatable>
   </div>
 </div>
