@@ -1,0 +1,85 @@
+.nav-bar-left {
+  height: 100vh;
+}
+.top-nav-menu-nm {
+  height: 60px;
+  background: #0d6efd;
+  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+}
+.top-nav-menu-nm .logo-section {
+  width: 100%;
+  height: 60px;
+  background: url("../../assets/images/logos/img-logo.png");
+  background-size: 100% 60px;
+}
+ul.navigation-list {
+  list-style-type: none;
+}
+.sidebar {
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  background-color: #f1f1f1;
+  height: calc(100vh - 60px);
+  overflow: auto;
+}
+
+.sidebar a {
+  display: block;
+  color: black;
+  padding: 16px;
+  text-decoration: none;
+  text-transform: capitalize;
+  font-size: 16px;
+  font-weight: 600;
+  font-family: cursive;
+}
+
+.sidebar a.active {
+  background-color: #0d6efd;
+  color: white;
+}
+
+.sidebar a:hover:not(.active) {
+  background-color: #555;
+  color: white;
+}
+.sidebar::-webkit-scrollbar {
+  width: 0.5em;
+}
+
+.sidebar::-webkit-scrollbar-track {
+  box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.3);
+}
+
+.sidebar::-webkit-scrollbar-thumb {
+  background-color: darkgrey;
+  outline: 1px solid slategrey;
+}
+
+div.content {
+  margin-left: 200px;
+  padding: 1px 16px;
+  height: 1000px;
+}
+
+@media screen and (max-width: 700px) {
+  .sidebar {
+    width: 100%;
+    height: auto;
+    position: relative;
+  }
+  .sidebar a {
+    float: left;
+  }
+  div.content {
+    margin-left: 0;
+  }
+}
+
+@media screen and (max-width: 400px) {
+  .sidebar a {
+    text-align: center;
+    float: none;
+  }
+}
