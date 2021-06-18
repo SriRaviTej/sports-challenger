@@ -47,9 +47,11 @@ ul.navigation-list {
   background-color: #555;
   color: white;
 }
-.sidebar::-webkit-scrollbar,
-.page-render-common::-webkit-scrollbar {
+.sidebar::-webkit-scrollbar {
   width: 0.5em;
+}
+.page-render-common::-webkit-scrollbar {
+  width: 1em;
 }
 
 .sidebar::-webkit-scrollbar-track,

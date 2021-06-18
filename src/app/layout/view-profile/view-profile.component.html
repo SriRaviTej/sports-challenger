@@ -1,0 +1,88 @@
+<div class="container">
+  <div class="row">
+    <div class="col-md-2"></div>
+    <div class="mt-2 mb-2 col-md-8">
+      <ul class="nav nav-pills nav-fill">
+        <li class="nav-item" (click)="chooseTab('profile-details')">
+          <a class="nav-link" [ngClass]="{'active': selectedTab === 'profile-details'}">
+            Profile Details</a>
+        </li>
+        <li class="nav-item" (click)="chooseTab('account-details')">
+          <a class="nav-link" [ngClass]="{'active': selectedTab === 'account-details'}">
+            Account Details</a>
+        </li>
+      </ul>
+    </div>
+    <div class="col-md-2"></div>
+  </div>
+  <div class="row" *ngIf="selectedTab === 'profile-details'">
+    <div class="col-md-2"></div>
+    <div class="prefix col-md-8">
+      <div class="row">
+        <div class="col-md-6 obj-header">
+          <p>Name:</p>
+        </div>
+        <div class="col-md-6 obj-value">
+          <p>Test User1</p>
+        </div>
+        <div class="row-clr"></div>
+        <div class="col-md-6 obj-header">
+          <p>Email ID:</p>
+        </div>
+        <div class="col-md-6 obj-value">
+          <p>testuser1@gmail.com</p>
+        </div>
+        <div class="row-clr"></div>
+        <div class="col-md-6 obj-header">
+          <p>Phone Number:</p>
+        </div>
+        <div class="col-md-6 obj-value">
+          <p>9848996569</p>
+        </div>
+        <div class="row-clr"></div>
+        <div class="col-md-6 obj-header">
+          <p>Referral CODE:</p>
+        </div>
+        <div class="col-md-6 obj-value">
+          <p>FIRST10</p>
+        </div>
+      </div>
+    </div>
+    <div class="col-md-2"></div>
+  </div>
+  <div class="row" *ngIf="selectedTab === 'account-details'">
+    <div class="col-md-2"></div>
+    <div class="prefix col-md-8">
+      <div class="row">
+        <div class="col-md-6 obj-header">
+          <p>Bank Account Number:</p>
+        </div>
+        <div class="col-md-6 obj-value">
+          <p>3500055512891</p>
+        </div>
+        <div class="row-clr"></div>
+        <div class="col-md-6 obj-header">
+          <p>Account Holder Name:</p>
+        </div>
+        <div class="col-md-6 obj-value">
+          <p>Test User1</p>
+        </div>
+        <div class="row-clr"></div>
+        <div class="col-md-6 obj-header">
+          <p>IFSC Code</p>
+        </div>
+        <div class="col-md-6 obj-value">
+          <p>AXIS020190017</p>
+        </div>
+        <div class="row-clr"></div>
+        <div class="col-md-6 obj-header">
+          <p>Branch Location:</p>
+        </div>
+        <div class="col-md-6 obj-value">
+          <p>Goa, India</p>
+        </div>
+      </div>
+    </div>
+    <div class="col-md-2"></div>
+  </div>
+</div>
