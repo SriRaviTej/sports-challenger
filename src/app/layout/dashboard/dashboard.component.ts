@@ -8,8 +8,10 @@ import { ColumnMode } from '@swimlane/ngx-datatable';
 })
 export class DashboardComponent implements OnInit {
   rows: any = [];
+  selectedTab: string = "inplay";
   ColumnMode = ColumnMode;
-  constructor() { 
+
+  constructor() {
     this.rows = [
       {
         "name": "Ethel Price",
@@ -139,12 +141,16 @@ export class DashboardComponent implements OnInit {
         "gender": "male",
         "company": "Maineland"
       },
-     
+
     ]
   }
 
   ngOnInit() {
 
+  }
+
+  chooseTab(value: any): any {
+    this.selectedTab = value;
   }
 
 }

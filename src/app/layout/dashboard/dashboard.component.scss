@@ -1,24 +1,29 @@
 .ngx-datatable.material {
-    .datatable-header {
-      .datatable-header-cell {
-        // your styles here
-        color: black;
-        font-size: 18px;
-      }
+  .datatable-header {
+    .datatable-header-cell {
+      // your styles here
+      color: black;
+      font-size: 18px;
     }
   }
-  :host::ng-deep.datatable-header-cell-label{
-      font-size: 18px;
-      color: lightgrey;
-  }
-  :host::ng-deep.prefix .datatable-header-cell {
-    background-color: #484848 !important;
-  }
-  :host::ng-deep.datatable-header-cell-template-wrap{
-      color: lightgrey;
-  }
-  .prefix{
-      border: 1px solid lightgrey;
-      box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
-  }
-  
+}
+:host::ng-deep.datatable-header-cell-label {
+  font-size: 18px;
+  color: lightgrey;
+}
+:host::ng-deep.prefix .datatable-header-cell {
+  background-color: #555 !important;
+}
+:host::ng-deep.datatable-header-cell-template-wrap {
+  color: lightgrey;
+}
+.prefix {
+  border: 1px solid lightgrey;
+  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+}
+.nav {
+  cursor: pointer;
+}
+.nav-link {
+  font-weight: bold;
+}
