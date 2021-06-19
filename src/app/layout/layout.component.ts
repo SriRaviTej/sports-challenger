@@ -16,6 +16,7 @@ export class LayoutComponent implements OnInit {
   }
   chooseTab(renderedPage: string): any {
     this.pageRendered = renderedPage;
+    this.showUserOptions = false;
   }
   toogleUserOptions(): any {
     this.showUserOptions = !this.showUserOptions;

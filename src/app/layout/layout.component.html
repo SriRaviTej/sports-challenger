@@ -2,19 +2,24 @@
   <div class="col-md-2">
     <div class="logo-section"></div>
   </div>
-  <div class="col-md-9"></div>
+  <div class="col-md-7"></div>
+  <div class="col-md-2 user-welcome-note">
+    <p>Hello, Test User1!</p>
+  </div>
   <div class="col-md-1">
     <div class="nav-item dropdown show">
       <i (click)="toogleUserOptions()" class="fas fa-user-circle fa-2x icon-blue"></i>
       <!-- <a href="#" data-toggle="dropdown" class="nav-link dropdown-toggle user-action" aria-expanded="true"> Test User1
         <b class="caret"></b></a> -->
       <div class="dropdown-menu show" *ngIf="showUserOptions">
-        <p class="dropdown-item">Test User1</p>
+        <!-- <p class="dropdown-item">Test User1</p> -->
+        <!-- <div class="dropdown-divider"></div> -->
+        <a routerLink="/layout/view-profile" (click)="chooseTab('/layout/view-profile')" class="dropdown-item"><i
+            class="far fa-user"></i> Profile</a>
+        <a routerLink="/layout/view-profile" (click)="chooseTab('/layout/view-profile')" class="dropdown-item"><i
+            class="far fa-trash-alt"></i> Close Account</a>
         <div class="dropdown-divider"></div>
-        <a href="#" class="dropdown-item"><i class="far fa-user"></i> Profile</a>
-        <a href="#" class="dropdown-item"><i class="far fa-trash-alt"></i> Close Account</a>
-        <div class="dropdown-divider"></div>
-        <a href="#" class="dropdown-item"><i class="fas fa-sign-out-alt"></i> Logout</a>
+        <a routerLink="/login" class="dropdown-item"><i class="fas fa-sign-out-alt"></i> Logout</a>
       </div>
     </div>
   </div>
@@ -34,7 +39,6 @@
       <a href="#"><i class="fa fa-fw fa-history"></i> Bet History</a>
       <a href="#"><i class="fa fa-fw fa-credit-card"></i> Payment History</a>
       <a href="#"><i class="fa fa-fw fa-tools"></i> Edit Stake</a>
-      <a href="#"><i class="fa fa-fw fa-trash-alt"></i> Close Account</a>
       <a href="#"><i class="fa fa-fw fa-envelope"></i> Contact Us</a>
     </div>
   </div>

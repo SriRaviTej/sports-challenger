@@ -3,27 +3,236 @@
     <ul class="nav nav-pills nav-fill">
       <li class="nav-item" (click)="chooseTab('inplay')">
         <a class="nav-link" [ngClass]="{'active': selectedTab === 'inplay'}">
-          <img src="./assets/images/infinity.png" height="28" alt="">
+          <img src="./assets/images/infinity.png" height="18" alt="">
           In Play</a>
       </li>
       <li class="nav-item" (click)="chooseTab('cricket')">
         <a class="nav-link" [ngClass]="{'active': selectedTab === 'cricket'}">
-          <img src="./assets/images/cricket.png" height="28" alt="">
+          <img src="./assets/images/cricket.png" height="18" alt="">
           Cricket</a>
       </li>
       <li class="nav-item" (click)="chooseTab('tennis')">
         <a class="nav-link" [ngClass]="{'active': selectedTab === 'tennis'}">
-          <img src="./assets/images/tennis-ball.png" height="28" alt="">
+          <img src="./assets/images/tennis-ball.png" height="18" alt="">
           Tennis</a>
       </li>
       <li class="nav-item" (click)="chooseTab('football')">
         <a class="nav-link" [ngClass]="{'active': selectedTab ==='football'}">
-          <img src="./assets/images/football.png" height="28" alt="">
+          <img src="./assets/images/football.png" height="18" alt="">
           Football</a>
       </li>
     </ul>
   </div>
   <div class="prefix">
+    <div class="row tab-header">
+      <div class="col-md-5">
+        <p>Match</p>
+      </div>
+      <div class="col-md-1">
+        <p>Status</p>
+      </div>
+      <div class="col-md-3">
+        <p>Match Schedule</p>
+      </div>
+      <div class="col-md-1">
+        <p>Result</p>
+      </div>
+      <div class="col-md-2">
+        <p>Action</p>
+      </div>
+    </div>
+    <div class="row tab-data">
+      <div class="col-md-5">
+        <img src="./assets/images/cricket.png" height="18" alt="">
+        <p> IND vs NZ, ICC WTC Final </p>
+      </div>
+      <div class="col-md-1">
+        <p>LIVE*</p>
+      </div>
+      <div class="col-md-3">
+        <p>Jun 18-Jun 22, 10:30 AM LOCAL</p>
+      </div>
+      <div class="col-md-1">
+        <p>In-Progress</p>
+      </div>
+      <div class="col-md-2">
+        <button class="button-btn">Create BET</button>
+      </div>
+    </div>
+    <div class="row tab-data">
+      <div class="col-md-5">
+        <img src="./assets/images/cricket.png" height="18" alt="">
+        <p> RSA vs WI 2nd Test</p>
+      </div>
+      <div class="col-md-1">
+        <p>LIVE*</p>
+      </div>
+      <div class="col-md-3">
+        <p>Jun 18-Jun 22, 10:30 AM LOCAL</p>
+      </div>
+      <div class="col-md-1">
+        <p>In-Progress</p>
+      </div>
+      <div class="col-md-2">
+        <button class="button-btn">Create BET</button>
+      </div>
+    </div>
+
+    <div class="row tab-data">
+      <div class="col-md-5">
+        <img src="./assets/images/tennis-ball.png" height="18" alt="">
+        <p> Diego Schwartzman vs Albert Ramos-Vinolas, Cordoba Open</p>
+      </div>
+      <div class="col-md-1">
+        <p>Yet to Start</p>
+      </div>
+      <div class="col-md-3">
+        <p>20-06-2021, 20:30 LOCAL, 05:00 IST</p>
+      </div>
+      <div class="col-md-1">
+        <p>Upcoming</p>
+      </div>
+      <div class="col-md-2">
+        <p></p>
+      </div>
+    </div>
+    <div class="row tab-data">
+      <div class="col-md-5">
+        <img src="./assets/images/football.png" height="18" alt="">
+        <p> Hungary vs France</p>
+      </div>
+      <div class="col-md-1">
+        <p>LIVE*</p>
+      </div>
+      <div class="col-md-3">
+        <p>6:30 PM LOCAL</p>
+      </div>
+      <div class="col-md-1">
+        <p>In-Progress</p>
+      </div>
+      <div class="col-md-2">
+        <button class="button-btn">Create BET</button>
+      </div>
+    </div>
+    <div class="row tab-data">
+      <div class="col-md-5">
+        <img src="./assets/images/cricket.png" height="18" alt="">
+        <p> ENG vs SL, 1st T20I </p>
+      </div>
+      <div class="col-md-1">
+        <p>LIVE*</p>
+      </div>
+      <div class="col-md-3">
+        <p>Jun 18, 19:30 LOCAL</p>
+      </div>
+      <div class="col-md-1">
+        <p>In-Progress</p>
+      </div>
+      <div class="col-md-2">
+        <button class="button-btn">Create BET</button>
+      </div>
+    </div>
+    <div class="row tab-data">
+      <div class="col-md-5">
+        <img src="./assets/images/tennis-ball.png" height="18" alt="">
+        <p> Benoit Paire vs Federico Coria, Cordoba Open</p>
+      </div>
+      <div class="col-md-1">
+        <p>Yet to Start</p>
+      </div>
+      <div class="col-md-3">
+        <p>20-06-2021, 22:00 LOCAL, 06:30 IST</p>
+      </div>
+      <div class="col-md-1">
+        <p>Upcoming</p>
+      </div>
+      <div class="col-md-2">
+        <p></p>
+      </div>
+    </div>
+    <div class="row tab-data">
+      <div class="col-md-5">
+        <img src="./assets/images/cricket.png" height="18" alt="">
+        <p> ENG vs SL, 2nd T20I </p>
+      </div>
+      <div class="col-md-1">
+        <p>Yet to Start</p>
+      </div>
+      <div class="col-md-3">
+        <p>Jun 21, 19:30 LOCAL</p>
+      </div>
+      <div class="col-md-1">
+        <p>Upcoming</p>
+      </div>
+      <div class="col-md-2">
+        <p></p>
+      </div>
+    </div>
+    <div class="row tab-data">
+      <div class="col-md-5">
+        <img src="./assets/images/tennis-ball.png" height="18" alt="">
+        <p> Diego Schwartzman vs Marco Cecchinato, Cordoba Open</p>
+      </div>
+      <div class="col-md-1">
+        <p>Yet to Start</p>
+      </div>
+      <div class="col-md-3">
+        <p>21-06-2021, 22:00 LOCAL, 06:30 IST</p>
+      </div>
+      <div class="col-md-1">
+        <p>Upcoming</p>
+      </div>
+      <div class="col-md-2">
+        <p></p>
+      </div>
+    </div>
+
+
+
+
+    <div class="row tab-data">
+      <div class="col-md-5">
+        <img src="./assets/images/football.png" height="18" alt="">
+        <p> Portugal vs Germany</p>
+      </div>
+      <div class="col-md-1">
+        <p>LIVE*</p>
+      </div>
+      <div class="col-md-3">
+        <p>7:30 PM LOCAL</p>
+      </div>
+      <div class="col-md-1">
+        <p>In-Progress</p>
+      </div>
+      <div class="col-md-2">
+        <button class="button-btn">Create BET</button>
+      </div>
+    </div>
+    <div class="row tab-data">
+      <div class="col-md-5">
+        <img src="./assets/images/football.png" height="18" alt="">
+        <p> Spain vs Poland</p>
+      </div>
+      <div class="col-md-1">
+        <p>LIVE*</p>
+      </div>
+      <div class="col-md-3">
+        <p>8:30 PM LOCAL</p>
+      </div>
+      <div class="col-md-1">
+        <p>In-Progress</p>
+      </div>
+      <div class="col-md-2">
+        <button class="button-btn">Create BET</button>
+      </div>
+    </div>
+
+
+
+
+
+  </div>
+  <div class="prefix" *ngIf="tempDisplay">
     <ngx-datatable class="bootstrap" [columnMode]="ColumnMode.flex" [headerHeight]="50" [footerHeight]="0"
       rowHeight="auto" [rows]="rows">
       <ngx-datatable-column name="Name" [flexGrow]="3">

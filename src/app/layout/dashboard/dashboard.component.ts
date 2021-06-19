@@ -10,6 +10,7 @@ export class DashboardComponent implements OnInit {
   rows: any = [];
   selectedTab: string = "inplay";
   ColumnMode = ColumnMode;
+  tempDisplay: boolean = false;
 
   constructor() {
     this.rows = [

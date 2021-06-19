@@ -27,3 +27,54 @@
 .nav-link {
   font-weight: bold;
 }
+.tab-data div {
+  min-height: 48px;
+  padding: 14px 10px;
+  display: flex;
+}
+.tab-data div img {
+  padding: 0 10px 0 0;
+  margin-top: 10px;
+}
+.tab-data-icon {
+  //padding: 0 60px;
+  text-align: right;
+}
+.tab-header,
+.tab-data {
+  margin: 0;
+  border-bottom: 1px solid rgb(0, 0, 0, 0.25);
+}
+.tab-header div {
+  height: 54px;
+  // text-align: center;
+  padding: 14px 10px;
+  background: #273e47;
+}
+.tab-header div p {
+  margin: 0;
+  font-size: 16px;
+  font-weight: 500;
+  color: #ffffff;
+}
+.button-btn {
+  background-color: #a4243b;
+  border: none;
+  color: white;
+  padding: 5px 24px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 14px;
+  font-weight: 500;
+  text-transform: uppercase;
+  margin: 4px 2px;
+  border-radius: 4px;
+  cursor: pointer;
+}
+.tab-data div p {
+  margin: 0;
+  font-size: 14px;
+  font-weight: 600;
+  line-height: 40px;
+}
