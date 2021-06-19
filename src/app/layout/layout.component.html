@@ -2,13 +2,33 @@
   <div class="col-md-2">
     <div class="logo-section"></div>
   </div>
+  <div class="col-md-9"></div>
+  <div class="col-md-1">
+    <div class="nav-item dropdown show">
+      <i (click)="toogleUserOptions()" class="fas fa-user-circle fa-2x icon-blue"></i>
+      <!-- <a href="#" data-toggle="dropdown" class="nav-link dropdown-toggle user-action" aria-expanded="true"> Test User1
+        <b class="caret"></b></a> -->
+      <div class="dropdown-menu show" *ngIf="showUserOptions">
+        <p class="dropdown-item">Test User1</p>
+        <div class="dropdown-divider"></div>
+        <a href="#" class="dropdown-item"><i class="far fa-user"></i> Profile</a>
+        <a href="#" class="dropdown-item"><i class="far fa-trash-alt"></i> Close Account</a>
+        <div class="dropdown-divider"></div>
+        <a href="#" class="dropdown-item"><i class="fas fa-sign-out-alt"></i> Logout</a>
+      </div>
+    </div>
+  </div>
 </div>
 <div class="row">
   <div class="col-md-2" id="sidebar-menu-nm">
     <div class="sidebar">
-      <a class="active" routerLink="/layout/dashboard"><i class="fa fa-fw fa-home"></i> Home</a>
-      <a routerLink="/layout/view-profile"><i class="fa fa-fw fa-user"></i> Profile</a>
-      <a routerLink="/layout/account-statement"><i class="fa fa-fw fa-file-invoice-dollar"></i> Account Statement</a>
+      <a [ngClass]="{'active': pageRendered === '/layout/dashboard'}" class="active" routerLink="/layout/dashboard"
+        (click)="chooseTab('/layout/dashboard')"><i class="fa fa-fw fa-home"></i> Home</a>
+      <a [ngClass]="{'active': pageRendered === '/layout/view-profile'}" routerLink="/layout/view-profile"
+        (click)="chooseTab('/layout/view-profile')"><i class="fa fa-fw fa-user"></i> Profile</a>
+      <a [ngClass]="{'active': pageRendered === '/layout/account-statement'}" routerLink="/layout/account-statement"
+        (click)="chooseTab('/layout/account-statement')"><i class="fa fa-fw fa-file-invoice-dollar"></i> Account
+        Statement</a>
       <a href="#"><i class="fa fa-fw fa-hand-holding-usd"></i> Deposit</a>
       <a href="#"><i class="fa fa-fw fa-donate"></i> Withdrawal</a>
       <a href="#"><i class="fa fa-fw fa-history"></i> Bet History</a>
